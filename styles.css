@@ -1,0 +1,143 @@
+:root {
+    --background-color: #474747;
+    --text-color: #E0E0CE;
+    --button-color: #D1603D;
+    --accent-color: #F2AF29;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: Arial, serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 100%;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: min(100vw, 80%);
+    margin: 0 auto;
+    text-align: center;
+    gap: 50px;
+  }
+  
+  #heading {
+    margin-top: 20px;
+  }
+  
+  #search-container {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 15px;
+    padding: 20px;
+    width: 70%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #search-container label {
+    font-size: 1.2em;
+  }
+  
+  #search-input {
+    width: 70%;
+    height: 10%;
+    max-height: 40px;
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--background-color);
+    font-size: 1.3em;
+    border-radius: 5px;
+    padding: 7px;
+  }
+  
+  #search-button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    width: 6em;
+    max-width: 50%;
+    height: 3em;
+    max-height: 10%;
+    font-size: 1.2rem;
+    overflow: hidden;
+  }
+  
+  #result {
+    background-color: var(--accent-color);
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  
+  #picture {
+    background-color: var(--text-color);
+    width: 80%;
+    max-width: 200px;
+    height: 10rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #picture img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #types {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  #types span {
+    padding: 10px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border-radius: 10px;
+  }
+  
+  #stats table {
+    background-color: var(--text-color);
+    border-collapse: separate;
+    border-spacing: 5px;
+  }
+  
+  #stats th, td{
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    padding: 10px;
+    width: 10rem;
+    text-align: center;
+    border: 2px solid var(--background-color)
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
